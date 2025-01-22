@@ -1,64 +1,60 @@
 import React, { useState } from 'react'
+import axios from 'axios'
+import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader'
+import ThreeRenderer from './ThreeRenderer'
 
-const InputForm = ({ onGenerate }) => {
-  const [inputs, setInputs] = useState({
-    material: '',
-    size: '',
-    color: '',
-    style: '',
-  })
+const InputForm = () => {
+  const [userInput, setUserInput] = useState({})
+  const [modelPath, setModelPath] = useState(null)
+  const [loading, setLoading] = useState(false)
+  const [error, setError] = useState(null)
 
-  const handleChange = (e) => {
-    const { name, value } = e.target
-    setInputs((prev) => ({
-      ...prev,
-      [name]: value,
-    }))
+  const handleChange = (event) => {
+    const { name, value } = event.target
+    setUserInput({ ...userInput, [name]: value })
   }
 
-  const handleSubmit = (e) => {
-    e.preventDefault()
-    onGenerate(inputs) // Pass the input data to the parent component
+  const handleGenerate = async () => {
+    setLoading(true)
+    setError(null)
+
+    try {
+      const response = await axios.post('http://localhost:5000/generate-model', userInput)
+      setModelPath(response.data.modelPath)
+    } catch (error) {
+      setError('Error generating model: ' + error.message)
+    } finally {
+      setLoading(false)
+    }
+  }
+
+  const load3DModel = (modelPath) => {
+    const loader = new GLTFLoader()
+    loader.load(modelPath, (gltf) => {
+      scene.add(gltf.scene) // Add 3D model to the Three.js scene
+    })
   }
 
   return (
-    <form onSubmit={handleSubmit}>
-      <label>
-        Material:
-        <select name="material" value={inputs.material} onChange={handleChange}>
-          <option value="">Select Material</option>
-          <option value="wood">Wood</option>
-          <option value="metal">Metal</option>
-          <option value="plastic">Plastic</option>
-        </select>
-      </label>
-      <br />
+    <div>
+      <form>
+        <label>
+          Material:
+          <input type="text" name="material" onChange={handleChange} />
+        </label>
+        <label>
+          Size:
+          <input type="text" name="size" onChange={handleChange} />
+        </label>
+        <button type="button" onClick={handleGenerate} disabled={loading}>
+          {loading ? 'Generating...' : 'Generate 3D Model'}
+        </button>
+      </form>
 
-      <label>
-        Size:
-        <select name="size" value={inputs.size} onChange={handleChange}>
-          <option value="">Select Size</option>
-          <option value="small">Small</option>
-          <option value="medium">Medium</option>
-          <option value="large">Large</option>
-        </select>
-      </label>
-      <br />
+      {error && <p>{error}</p>}
 
-      <label>
-        Color:
-        <input type="text" name="color" value={inputs.color} onChange={handleChange} placeholder="Enter color" />
-      </label>
-      <br />
-
-      <label>
-        Style:
-        <input type="text" name="style" value={inputs.style} onChange={handleChange} placeholder="Enter style" />
-      </label>
-      <br />
-
-      <button type="submit">Generate</button>
-    </form>
+      {modelPath && !loading && <ThreeRenderer modelPath={modelPath} />}
+    </div>
   )
 }
 
