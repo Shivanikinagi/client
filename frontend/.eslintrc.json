@@ -9,7 +9,11 @@
     "plugin:prettier/recommended",
     "plugin:react-hooks/recommended",
     "plugin:import/recommended",
-    "plugin:@react-three/recommended"
+    "plugin:@react-three/recommended",
+    "eslint:recommended",
+    "plugin:react/recommended"
+  ]
+}
   ],
   "plugins": ["@typescript-eslint", "react", "react-hooks", "import", "jest", "prettier", "@react-three"],
   "parser": "@typescript-eslint/parser",
