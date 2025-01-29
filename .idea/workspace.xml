@@ -409,7 +409,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/backend" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/backend/client" />
     <option name="ROOT_SYNC" value="DONT_SYNC" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
@@ -436,13 +436,14 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "<unknown>",
-    "last_opened_file_path": "D:/s/pycharm projects/DreamHome/backend/app.py",
+    "git-widget-placeholder": "Merging master",
+    "last_opened_file_path": "D:/s/pycharm projects/DreamHome",
     "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\s\pycharm projects\DreamHome" />
       <recent name="D:\s\pycharm projects\DreamHome\frontend" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
