@@ -14,21 +14,31 @@ const LoginForm = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    const url = isLogin ? "/login" : "/register"; // Dynamic endpoint
-    const response = await fetch(url, {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify(formData),
-    });
+    const url = isLogin ? "http://127.0.0.1:5000/login" : "http://127.0.0.1:5000/register"; // Dynamic endpoint
 
-    const data = await response.json(); // Parse the response as JSON
-    if (data.message === "Registration successful" || data.message === "Login successful") {
-      alert(isLogin ? "Login Successful!" : "Registration Successful!");
-      if (isLogin) {
-        window.location.href = "/user-home"; // Redirect after successful login
+    try {
+      const response = await fetch(url, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(formData),
+      });
+
+      if (!response.ok) {
+        throw new Error("Failed to fetch");
       }
-    } else {
-      alert(data.message); // Show failure message from backend (e.g., "User already registered")
+
+      const data = await response.json(); // Parse the response as JSON
+      if (data.message === "Registration successful" || data.message === "Login successful") {
+        alert(isLogin ? "Login Successful!" : "Registration Successful!");
+        if (isLogin) {
+          window.location.href = "/user-home"; // Redirect after successful login
+        }
+      } else {
+        alert(data.message); // Show failure message from backend (e.g., "User already registered")
+      }
+    } catch (error) {
+      console.error('Error:', error);
+      alert('An error occurred. Please try again.');
     }
   };
 

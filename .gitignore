@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
 # dependencies
@@ -21,3 +22,25 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+=======
+node_modules/
+coverage/
+dist/
+build/
+types/
+# commit types in src
+!packages/*/src/types/
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+.DS_Store
+.vscode
+.docz/
+package-lock.json
+coverage/
+.idea
+yarn-error.log
+.size-snapshot.json
+__tests__/__image_snapshots__/__diff_output__
+>>>>>>> e8db3a3c3cc13f0c7635df57bd77d42809f9cd15
