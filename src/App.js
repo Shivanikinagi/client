@@ -55,23 +55,19 @@ export default App;
 */
 import React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import LoginForm from "./components/LoginForm";
-
-function UserHome() {
-  return <h1>Welcome to User Home!</h1>;
-}
-
-function ArchitectHome() {
-  return <h1>Welcome to Architect Home!</h1>;
-}
+import LoginForm from "./components/Login";  // Ensure this file exists and is exported correctly
+import Home from "./components/Home";  // Ensure this file exists and is exported correctly
+import ArchitectHome from "./components/ArchitectHome";  // Ensure this file exists and is exported correctly
+import Register from "./components/Register";  // Ensure this file exists and is exported correctly
 
 function App() {
   return (
     <Router>
       <Routes>
         <Route path="/" element={<LoginForm />} />
-        <Route path="/user-home" element={<UserHome />} />
+        <Route path="/home" element={<Home />} />
         <Route path="/architect-home" element={<ArchitectHome />} />
+        <Route path="/register" element={<Register />} />
       </Routes>
     </Router>
   );

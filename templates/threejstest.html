@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<title>:WICKED:</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='css/css3d.css') }}">
+{% endblock %}
+
+{% block body %}
+<div class="bg">
+	<div id="container">
+		<div id="css3d"></div>
+		<div id="webgl"></div>
+		<script type="module" src="../static/js/threejstest.js"></script>
+		<!-- <button type="button" onclick="resetView()">Reset View</button> -->
+	</div>
+</div>
+
+{% endblock %}

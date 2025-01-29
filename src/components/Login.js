@@ -3,9 +3,9 @@ import React, { useState } from "react";
 const LoginForm = () => {
   const [isLogin, setIsLogin] = useState(true); // Toggle between Login and Register
   const [formData, setFormData] = useState({
-    username: "",
+    name: "",
+    email: "",
     password: "",
-    role: "User", // Default role
   });
 
   const handleChange = (e) => {
@@ -20,46 +20,50 @@ const LoginForm = () => {
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(formData),
     });
-    const data = await response.json();
-    if (data.success) {
+
+    const data = await response.json(); // Parse the response as JSON
+    if (data.message === "Registration successful" || data.message === "Login successful") {
       alert(isLogin ? "Login Successful!" : "Registration Successful!");
       if (isLogin) {
-        window.location.href = formData.role === "Architect" ? "/architect-home" : "/user-home";
+        window.location.href = "/user-home"; // Redirect after successful login
       }
     } else {
-      alert(data.message);
+      alert(data.message); // Show failure message from backend (e.g., "User already registered")
     }
   };
 
   return (
-    <div
-      className="d-flex justify-content-center align-items-center vh-100"
-      style={{ background: "linear-gradient(to bottom right, #7f7fff, #bb7fff)" }}
-    >
+    <div className="d-flex justify-content-center align-items-center vh-100" style={{ background: "linear-gradient(to bottom right, #7f7fff, #bb7fff)" }}>
       <div className="card p-4 shadow-lg" style={{ width: "24rem", borderRadius: "1.5rem" }}>
         <h1 className="text-center mb-4 text-dark">3D Model Generator</h1>
         <div className="d-flex justify-content-around mb-4">
-          <button
-            onClick={() => setIsLogin(true)}
-            className={`btn ${isLogin ? "btn-primary" : "btn-light"} w-50`}
-          >
+          <button onClick={() => setIsLogin(true)} className={`btn ${isLogin ? "btn-primary" : "btn-light"} w-50`}>
             Login
           </button>
-          <button
-            onClick={() => setIsLogin(false)}
-            className={`btn ${!isLogin ? "btn-primary" : "btn-light"} w-50`}
-          >
+          <button onClick={() => setIsLogin(false)} className={`btn ${!isLogin ? "btn-primary" : "btn-light"} w-50`}>
             Register
           </button>
         </div>
         <form onSubmit={handleSubmit}>
+          {!isLogin && (
+            <div className="mb-3">
+              <label className="form-label">Name</label>
+              <input
+                type="text"
+                name="name"
+                className="form-control"
+                placeholder="Enter your name"
+                onChange={handleChange}
+              />
+            </div>
+          )}
           <div className="mb-3">
-            <label className="form-label">Username</label>
+            <label className="form-label">Email</label>
             <input
-              type="text"
-              name="username"
+              type="email"
+              name="email"
               className="form-control"
-              placeholder="Enter your username"
+              placeholder="Enter your email"
               onChange={handleChange}
             />
           </div>
@@ -73,15 +77,6 @@ const LoginForm = () => {
               onChange={handleChange}
             />
           </div>
-          {!isLogin && (
-            <div className="mb-3">
-              <label className="form-label">Role</label>
-              <select name="role" className="form-select" onChange={handleChange}>
-                <option>User</option>
-                <option>Architect</option>
-              </select>
-            </div>
-          )}
           <button type="submit" className="btn btn-dark w-100">
             {isLogin ? "Login" : "Register"}
           </button>
