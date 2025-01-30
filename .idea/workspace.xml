@@ -1,0 +1,515 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="1cc386f2-00e3-42fd-9eee-0be7251c7cc5" name="Changes" comment="initial commit">
+      <change afterPath="$PROJECT_DIR$/backend/ai_models/DAE-GAN/h origin main" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/.changeset/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/.changeset/config.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/.codesandbox/ci.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/.eslintignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/.github/FUNDING.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/.github/ISSUE_TEMPLATE/bug_report.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/.github/ISSUE_TEMPLATE/feature_request.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/.github/issue_template.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/.github/workflows/docs.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/.github/workflows/test.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/.husky/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/.husky/pre-commit" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/.idea/DreamHome.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/.prettierignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/.prettierrc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/CONTRIBUTING.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/babel.config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/backend" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/docs/API/additional-exports.mdx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/docs/API/canvas.mdx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/docs/API/events.mdx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/docs/API/hooks.mdx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/docs/API/objects.mdx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/docs/advanced/pitfalls.mdx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/docs/advanced/scaling-performance.mdx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/docs/banner-journey.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/docs/banner-r3f.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/docs/basic-app.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/docs/getting-started/basic-example-sandpack/index.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/docs/getting-started/basic-example-sandpack/styles.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/docs/getting-started/basic-example.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/docs/getting-started/examples.mdx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/docs/getting-started/installation.mdx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/docs/getting-started/introduction.mdx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/docs/getting-started/your-first-scene.mdx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/docs/logo.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/docs/preview.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/docs/tutorials/basic-animations.mdx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/docs/tutorials/events-and-interaction.mdx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/docs/tutorials/gltfjsx.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/docs/tutorials/how-it-works.mdx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/docs/tutorials/loading-models.mdx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/docs/tutorials/loading-textures.mdx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/docs/tutorials/testing.mdx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/docs/tutorials/typescript.mdx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/docs/tutorials/using-with-react-spring.mdx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/docs/tutorials/v8-migration-guide.mdx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/example/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/example/CHANGELOG.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/example/favicon.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/example/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/example/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/example/public/Parrot.glb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/example/public/Stork.glb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/example/public/apple.gltf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/example/public/bottle.gltf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/example/public/farm.gltf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/example/public/lightning.gltf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/example/public/ramen.gltf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/example/src/App.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/example/src/demos/Animation.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/example/src/demos/AutoDispose.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/example/src/demos/ClickAndHover.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/example/src/demos/ContextMenuOverride.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/example/src/demos/Gestures.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/example/src/demos/Gltf.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/example/src/demos/Inject.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/example/src/demos/Layers.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/example/src/demos/Lines.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/example/src/demos/MultiMaterial.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/example/src/demos/MultiRender.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/example/src/demos/MultiView.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/example/src/demos/Pointcloud.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/example/src/demos/Portals.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/example/src/demos/Reparenting.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/example/src/demos/ResetProps.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/example/src/demos/SVGRenderer.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/example/src/demos/Selection.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/example/src/demos/StopPropagation.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/example/src/demos/SuspenseAndErrors.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/example/src/demos/SuspenseMaterial.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/example/src/demos/Test.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/example/src/demos/ViewTracking.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/example/src/demos/Viewcube.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/example/src/demos/index.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/example/src/index.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/example/src/styles.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/example/tsconfig.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/example/typings/global.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/example/vite.config.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/example/yarn.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/frontend/.changeset/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/frontend/.changeset/config.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/frontend/.codesandbox/ci.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/frontend/.eslintignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/frontend/.eslintrc.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/frontend/.github/FUNDING.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/frontend/.github/ISSUE_TEMPLATE/bug_report.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/frontend/.github/ISSUE_TEMPLATE/feature_request.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/frontend/.github/issue_template.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/frontend/.github/workflows/docs.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/frontend/.github/workflows/test.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/frontend/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/frontend/.gitignore.bak" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/frontend/.husky/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/frontend/.husky/pre-commit" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/frontend/.prettierignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/frontend/.prettierrc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/frontend/CONTRIBUTING.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/frontend/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/frontend/README.bak.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/frontend/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/frontend/babel.config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/frontend/docs/API/additional-exports.mdx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/frontend/docs/API/canvas.mdx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/frontend/docs/API/events.mdx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/frontend/docs/API/hooks.mdx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/frontend/docs/API/objects.mdx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/frontend/docs/advanced/pitfalls.mdx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/frontend/docs/advanced/scaling-performance.mdx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/frontend/docs/banner-journey.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/frontend/docs/banner-r3f.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/frontend/docs/basic-app.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/frontend/docs/getting-started/basic-example-sandpack/index.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/frontend/docs/getting-started/basic-example-sandpack/styles.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/frontend/docs/getting-started/basic-example.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/frontend/docs/getting-started/examples.mdx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/frontend/docs/getting-started/installation.mdx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/frontend/docs/getting-started/introduction.mdx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/frontend/docs/getting-started/your-first-scene.mdx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/frontend/docs/logo.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/frontend/docs/preview.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/frontend/docs/tutorials/basic-animations.mdx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/frontend/docs/tutorials/events-and-interaction.mdx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/frontend/docs/tutorials/gltfjsx.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/frontend/docs/tutorials/how-it-works.mdx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/frontend/docs/tutorials/loading-models.mdx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/frontend/docs/tutorials/loading-textures.mdx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/frontend/docs/tutorials/testing.mdx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/frontend/docs/tutorials/typescript.mdx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/frontend/docs/tutorials/using-with-react-spring.mdx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/frontend/docs/tutorials/v8-migration-guide.mdx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/frontend/example/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/frontend/example/CHANGELOG.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/frontend/example/favicon.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/frontend/example/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/frontend/example/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/frontend/example/public/Parrot.glb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/frontend/example/public/Stork.glb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/frontend/example/public/apple.gltf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/frontend/example/public/bottle.gltf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/frontend/example/public/farm.gltf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/frontend/example/public/lightning.gltf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/frontend/example/public/ramen.gltf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/frontend/example/src/App.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/frontend/example/src/demos/Animation.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/frontend/example/src/demos/AutoDispose.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/frontend/example/src/demos/ClickAndHover.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/frontend/example/src/demos/ContextMenuOverride.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/frontend/example/src/demos/Gestures.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/frontend/example/src/demos/Gltf.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/frontend/example/src/demos/Inject.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/frontend/example/src/demos/Layers.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/frontend/example/src/demos/Lines.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/frontend/example/src/demos/MultiMaterial.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/frontend/example/src/demos/MultiRender.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/frontend/example/src/demos/MultiView.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/frontend/example/src/demos/Pointcloud.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/frontend/example/src/demos/Portals.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/frontend/example/src/demos/Reparenting.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/frontend/example/src/demos/ResetProps.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/frontend/example/src/demos/SVGRenderer.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/frontend/example/src/demos/Selection.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/frontend/example/src/demos/StopPropagation.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/frontend/example/src/demos/SuspenseAndErrors.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/frontend/example/src/demos/SuspenseMaterial.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/frontend/example/src/demos/Test.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/frontend/example/src/demos/ViewTracking.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/frontend/example/src/demos/Viewcube.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/frontend/example/src/demos/index.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/frontend/example/src/index.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/frontend/example/src/styles.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/frontend/example/tsconfig.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/frontend/example/typings/global.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/frontend/example/vite.config.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/frontend/example/yarn.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/frontend/jest.config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/frontend/package.bak.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/frontend/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/frontend/packages/eslint-plugin/.npmignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/frontend/packages/eslint-plugin/CHANGELOG.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/frontend/packages/eslint-plugin/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/frontend/packages/eslint-plugin/docs/rules/no-clone-in-loop.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/frontend/packages/eslint-plugin/docs/rules/no-new-in-loop.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/frontend/packages/eslint-plugin/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/frontend/packages/eslint-plugin/scripts/codegen.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/frontend/packages/eslint-plugin/src/configs/all.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/frontend/packages/eslint-plugin/src/configs/recommended.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/frontend/packages/eslint-plugin/src/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/frontend/packages/eslint-plugin/src/lib/url.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/frontend/packages/eslint-plugin/src/rules/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/frontend/packages/eslint-plugin/src/rules/no-clone-in-loop.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/frontend/packages/eslint-plugin/src/rules/no-new-in-loop.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/frontend/packages/eslint-plugin/tests/rules/no-clone-in-loop.test.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/frontend/packages/eslint-plugin/tests/rules/no-new-in-loop.test.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/frontend/packages/fiber/.npmignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/frontend/packages/fiber/CHANGELOG.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/frontend/packages/fiber/__mocks__/expo-asset.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/frontend/packages/fiber/__mocks__/expo-file-system.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/frontend/packages/fiber/__mocks__/expo-gl.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/frontend/packages/fiber/__mocks__/react-native.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/frontend/packages/fiber/__mocks__/react-use-measure.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/frontend/packages/fiber/native/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/frontend/packages/fiber/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/frontend/packages/fiber/readme.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/frontend/packages/fiber/src/core/events.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/frontend/packages/fiber/src/core/hooks.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/frontend/packages/fiber/src/core/index.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/frontend/packages/fiber/src/core/loop.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/frontend/packages/fiber/src/core/renderer.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/frontend/packages/fiber/src/core/store.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/frontend/packages/fiber/src/core/utils.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/frontend/packages/fiber/src/index.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/frontend/packages/fiber/src/native.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/frontend/packages/fiber/src/native/Canvas.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/frontend/packages/fiber/src/native/events.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/frontend/packages/fiber/src/native/polyfills.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/frontend/packages/fiber/src/three-types.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/frontend/packages/fiber/src/web/Canvas.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/frontend/packages/fiber/src/web/events.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/frontend/packages/fiber/src/web/use-measure.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/frontend/packages/fiber/tests/core/events.test.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/frontend/packages/fiber/tests/core/hooks.test.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/frontend/packages/fiber/tests/core/renderer.test.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/frontend/packages/fiber/tests/core/utils.test.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/frontend/packages/fiber/tests/native/__snapshots__/canvas.test.tsx.snap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/frontend/packages/fiber/tests/native/canvas.test.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/frontend/packages/fiber/tests/native/polyfills.test.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/frontend/packages/fiber/tests/setupTests.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/frontend/packages/fiber/tests/web/__snapshots__/canvas.test.tsx.snap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/frontend/packages/fiber/tests/web/canvas.test.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/frontend/packages/shared/pointerEventPolyfill.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/frontend/packages/shared/setupTests.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/frontend/packages/test-renderer/.npmignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/frontend/packages/test-renderer/CHANGELOG.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/frontend/packages/test-renderer/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/frontend/packages/test-renderer/markdown/rttr-instance.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/frontend/packages/test-renderer/markdown/rttr.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/frontend/packages/test-renderer/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/frontend/packages/test-renderer/src/WebGL2RenderingContext.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/frontend/packages/test-renderer/src/__tests__/RTTR.core.test.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/frontend/packages/test-renderer/src/__tests__/RTTR.events.test.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/frontend/packages/test-renderer/src/__tests__/RTTR.hooks.test.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/frontend/packages/test-renderer/src/__tests__/RTTR.methods.test.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/frontend/packages/test-renderer/src/__tests__/__snapshots__/RTTR.core.test.tsx.snap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/frontend/packages/test-renderer/src/__tests__/is.test.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/frontend/packages/test-renderer/src/createTestCanvas.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/frontend/packages/test-renderer/src/createTestInstance.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/frontend/packages/test-renderer/src/fireEvent.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/frontend/packages/test-renderer/src/helpers/events.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/frontend/packages/test-renderer/src/helpers/graph.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/frontend/packages/test-renderer/src/helpers/is.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/frontend/packages/test-renderer/src/helpers/strings.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/frontend/packages/test-renderer/src/helpers/testInstance.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/frontend/packages/test-renderer/src/helpers/tree.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/frontend/packages/test-renderer/src/helpers/waitFor.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/frontend/packages/test-renderer/src/index.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/frontend/packages/test-renderer/yarn.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/frontend/public/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/frontend/public/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/frontend/public/logo192.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/frontend/public/logo512.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/frontend/public/manifest.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/frontend/public/robots.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/frontend/src/App.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/frontend/src/App.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/frontend/src/App.test.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/frontend/src/InputForm.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/frontend/src/ThreeRenderer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/frontend/src/index.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/frontend/src/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/frontend/src/logo.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/frontend/src/reportWebVitals.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/frontend/src/setupTests.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/frontend/tsconfig.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/frontend/yarn.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/jest.config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/packages/eslint-plugin/.npmignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/packages/eslint-plugin/CHANGELOG.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/packages/eslint-plugin/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/packages/eslint-plugin/docs/rules/no-clone-in-loop.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/packages/eslint-plugin/docs/rules/no-new-in-loop.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/packages/eslint-plugin/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/packages/eslint-plugin/scripts/codegen.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/packages/eslint-plugin/src/configs/all.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/packages/eslint-plugin/src/configs/recommended.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/packages/eslint-plugin/src/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/packages/eslint-plugin/src/lib/url.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/packages/eslint-plugin/src/rules/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/packages/eslint-plugin/src/rules/no-clone-in-loop.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/packages/eslint-plugin/src/rules/no-new-in-loop.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/packages/eslint-plugin/tests/rules/no-clone-in-loop.test.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/packages/eslint-plugin/tests/rules/no-new-in-loop.test.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/packages/fiber/.npmignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/packages/fiber/CHANGELOG.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/packages/fiber/__mocks__/expo-asset.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/packages/fiber/__mocks__/expo-file-system.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/packages/fiber/__mocks__/expo-gl.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/packages/fiber/__mocks__/react-native.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/packages/fiber/__mocks__/react-use-measure.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/packages/fiber/native/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/packages/fiber/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/packages/fiber/readme.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/packages/fiber/src/core/events.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/packages/fiber/src/core/hooks.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/packages/fiber/src/core/index.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/packages/fiber/src/core/loop.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/packages/fiber/src/core/renderer.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/packages/fiber/src/core/store.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/packages/fiber/src/core/utils.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/packages/fiber/src/index.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/packages/fiber/src/native.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/packages/fiber/src/native/Canvas.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/packages/fiber/src/native/events.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/packages/fiber/src/native/polyfills.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/packages/fiber/src/three-types.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/packages/fiber/src/web/Canvas.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/packages/fiber/src/web/events.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/packages/fiber/src/web/use-measure.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/packages/fiber/tests/core/events.test.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/packages/fiber/tests/core/hooks.test.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/packages/fiber/tests/core/renderer.test.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/packages/fiber/tests/core/utils.test.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/packages/fiber/tests/native/__snapshots__/canvas.test.tsx.snap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/packages/fiber/tests/native/canvas.test.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/packages/fiber/tests/native/polyfills.test.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/packages/fiber/tests/setupTests.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/packages/fiber/tests/web/__snapshots__/canvas.test.tsx.snap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/packages/fiber/tests/web/canvas.test.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/packages/shared/pointerEventPolyfill.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/packages/shared/setupTests.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/packages/test-renderer/.npmignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/packages/test-renderer/CHANGELOG.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/packages/test-renderer/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/packages/test-renderer/markdown/rttr-instance.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/packages/test-renderer/markdown/rttr.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/packages/test-renderer/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/packages/test-renderer/src/WebGL2RenderingContext.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/packages/test-renderer/src/__tests__/RTTR.core.test.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/packages/test-renderer/src/__tests__/RTTR.events.test.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/packages/test-renderer/src/__tests__/RTTR.hooks.test.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/packages/test-renderer/src/__tests__/RTTR.methods.test.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/packages/test-renderer/src/__tests__/__snapshots__/RTTR.core.test.tsx.snap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/packages/test-renderer/src/__tests__/is.test.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/packages/test-renderer/src/createTestCanvas.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/packages/test-renderer/src/createTestInstance.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/packages/test-renderer/src/fireEvent.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/packages/test-renderer/src/helpers/events.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/packages/test-renderer/src/helpers/graph.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/packages/test-renderer/src/helpers/is.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/packages/test-renderer/src/helpers/strings.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/packages/test-renderer/src/helpers/testInstance.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/packages/test-renderer/src/helpers/tree.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/packages/test-renderer/src/helpers/waitFor.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/packages/test-renderer/src/index.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/packages/test-renderer/src/types/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/packages/test-renderer/src/types/internal.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/packages/test-renderer/src/types/public.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/packages/test-renderer/yarn.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/readme.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/tsconfig.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/client/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.eslintrc.json" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintrc.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/client/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/backend/client/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/client/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/backend/client/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/client/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/client/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/backend/client/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/.eslintrc.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/.eslintrc.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/readme.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/yarn.lock" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/backend/client" />
+    <option name="ROOT_SYNC" value="DONT_SYNC" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;Shivanikinagi&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/pmndrs/react-three-fiber.git&quot;,
+    &quot;accountId&quot;: &quot;2764a472-59aa-49ee-9dd6-72e92ed999f3&quot;
+  }
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 0
+}</component>
+  <component name="ProjectId" id="2ruMRVG1d26mr9b780pi5BtZbJz" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "Merging master",
+    "last_opened_file_path": "D:/s/pycharm projects/DreamHome",
+    "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\s\pycharm projects\DreamHome" />
+      <recent name="D:\s\pycharm projects\DreamHome\frontend" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\s\pycharm projects\DreamHome\backend\client" />
+      <recent name="D:\s\pycharm projects\DreamHome\backend" />
+      <recent name="D:\s\pycharm projects\DreamHome\frontend" />
+      <recent name="D:\s\pycharm projects\DreamHome\frontend\frontend\src" />
+      <recent name="D:\s\pycharm projects\DreamHome\frontend\frontend" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="app" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+      <module name="DreamHome" />
+      <option name="ENV_FILES" value="$PROJECT_DIR$" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="SDK_NAME" value="Python 3.10 (DreamHome)" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="D:\s\pycharm projects\DreamHome\backend\client\app.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-python-sdk-98f27166c754-ba05f1cad1b1-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-242.21829.153" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="1cc386f2-00e3-42fd-9eee-0be7251c7cc5" name="Changes" comment="" />
+      <created>1737404498882</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1737404498882</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="initial commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="initial commit" />
+  </component>
+</project>
