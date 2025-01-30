@@ -46,6 +46,7 @@
     ]
   },
   "devDependencies": {
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
     "@react-three/eslint-plugin": "^0.1.2",
     "@types/react-reconciler": "^0.28.9",
     "@types/three": "^0.172.0",
