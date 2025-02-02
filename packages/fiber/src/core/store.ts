@@ -1,5 +1,6 @@
 import create from 'zustand'
 import * as THREE from 'three'
+import React from 'react'
 
 // Define the InternalState interface
 interface InternalState {
@@ -16,10 +17,10 @@ interface InternalState {
 }
 
 // Define the RootState interface
-interface RootState {
+export interface RootState {
   internal: InternalState
-  gl: THREE.WebGLRenderer
-  camera: THREE.Camera
+  gl: THREE.WebGLRenderer | null
+  camera: THREE.Camera | null
   scene: THREE.Scene
   raycaster: THREE.Raycaster
   clock: THREE.Clock
@@ -44,16 +45,20 @@ const useStore = create<RootState>((set, get) => ({
     },
   },
 
-  gl: null as unknown as THREE.WebGLRenderer,
-  camera: null as unknown as THREE.Camera,
+  gl: null,
+  camera: null,
   scene: new THREE.Scene(),
   raycaster: new THREE.Raycaster(),
   clock: new THREE.Clock(),
 
-  set: set,
-  get: get,
+  set: (partial) => set((state) => ({ ...state, ...partial })),
+  get: () => get(),
 }))
 
-// Export the store and types
+// Create and export the React context
+const context = React.createContext<RootState | undefined>(undefined)
+
+// Export the store, context, and types
 export type UseRootStore = typeof useStore
+export { context, RootState }
 export default useStore

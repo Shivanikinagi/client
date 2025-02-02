@@ -1,5 +1,5 @@
 import * as THREE from 'three'
-import { useStore, UseRootStore } from './store'
+import useStore, { UseRootStore } from './store'
 
 // Define the Intersection type
 interface Intersection {
@@ -8,7 +8,7 @@ interface Intersection {
 }
 
 // Function to handle pointer events
-function setupPointerEvents(scene: THREE.Scene, camera: THREE.Camera, canvas: HTMLElement) {
+export function setupPointerEvents(scene: THREE.Scene, camera: THREE.Camera, canvas: HTMLElement) {
   const raycaster = new THREE.Raycaster()
   const pointer = new THREE.Vector2()
 
@@ -66,8 +66,9 @@ export function handleEvent(event: MouseEvent | TouchEvent, store: UseRootStore)
 
   const eventsObjects = internal.interaction
 
-  eventsObjects.forEach((object) => {
+  eventsObjects.forEach((object: THREE.Object3D) => {
     const intersection = checkIntersection(event, object)
+
     if (intersection && !duplicates.has(intersection.object.uuid)) {
       duplicates.add(intersection.object.uuid)
       intersections.push(intersection)
@@ -91,6 +92,7 @@ function checkIntersection(event: MouseEvent | TouchEvent, object: THREE.Object3
     mouse.y = -(touch.clientY / window.innerHeight) * 2 + 1
   }
 
+  raycaster.setFromCamera(mouse, camera) // Ensure the raycaster is set with the camera
   const intersects = raycaster.intersectObject(object)
   if (intersects.length > 0) {
     return {

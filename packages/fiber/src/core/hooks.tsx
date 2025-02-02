@@ -1,6 +1,6 @@
 import * as THREE from 'three'
 import * as React from 'react'
-import { StateSelector, EqualityChecker } from 'zustand'
+//import { StateSelector, EqualityChecker } from 'zustand'
 import { suspend, preload, clear } from 'suspend-react'
 import { context, RootState, RenderCallback } from './store'
 import { buildGraph, ObjectMap, is, useMutableCallback, useIsomorphicLayoutEffect } from './utils'
@@ -49,10 +49,10 @@ export function useStore() {
  * @see https://docs.pmnd.rs/react-three-fiber/api/hooks#usethree
  */
 export function useThree<T = RootState>(
-  selector: StateSelector<RootState, T> = (state) => state as unknown as T,
-  equalityFn?: EqualityChecker<T>,
+  selector: (state: RootState) => T = (state) => state as T,
+  equalityFn?: (prev: T, next: T) => boolean,
 ) {
-  return useStore()(selector, equalityFn)
+  return useStore()
 }
 
 /**
@@ -62,7 +62,8 @@ export function useThree<T = RootState>(
  */
 export function useFrame(callback: RenderCallback, renderPriority: number = 0): null {
   const store = useStore()
-  const subscribe = store.getState().internal.subscribe
+  const subscribe = store.internal.subscribe
+
   // Memoize ref
   const ref = useMutableCallback(callback)
   // Subscribe on mount, unsubscribe on unmount

@@ -5,19 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1cc386f2-00e3-42fd-9eee-0be7251c7cc5" name="Changes" comment="initial commit">
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flask-threejs-testing" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myproject/myapp/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/myproject/myapp/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myproject/myproject/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/myproject/myproject/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/fiber/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/packages/fiber/src/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/fiber/src/core/ThreeDScene.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/packages/fiber/src/core/ThreeDScene.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/packages/fiber/src/core/events.ts" beforeDir="false" afterPath="$PROJECT_DIR$/packages/fiber/src/core/events.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/fiber/src/core/hooks.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/packages/fiber/src/core/hooks.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/packages/fiber/src/core/store.ts" beforeDir="false" afterPath="$PROJECT_DIR$/packages/fiber/src/core/store.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/fiber/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/packages/fiber/src/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
