@@ -200,85 +200,81 @@ if __name__ == "__main__":
     app.run(debug=True)
 if __name__ == '__main__':
     app.run(debug=True)'''
-from flask import Flask, request, jsonify
-from flask_mysqldb import MySQL
-from flask_bcrypt import Bcrypt
-from flask_cors import CORS
-import os
+from django.contrib.auth.models import AbstractUser
+from django.contrib.auth import authenticate
+from django.http import JsonResponse
+from django.views.decorators.csrf import csrf_exempt
+from django.db import models, IntegrityError
+from django.middleware.csrf import get_token
+from django.contrib import admin
+from django.urls import path
+import json
 
-app = Flask(__name__)
-bcrypt = Bcrypt(app)
 
-# Enable CORS for the frontend (React)
-CORS(app, resources={r"/register": {"origins": "http://localhost:3000"}})
+# Custom User Model
+class CustomUser(AbstractUser):
+    email = models.EmailField(unique=True)
+    name = models.CharField(max_length=255)
+    USERNAME_FIELD = 'email'
+    REQUIRED_FIELDS = ['username']
 
-# ✅ Use environment variables for sensitive data
-app.config['MYSQL_HOST'] = 'localhost'
-app.config['MYSQL_USER'] = 'root'  # Update with your MySQL username
-app.config['MYSQL_PASSWORD'] = os.getenv("MYSQL_PASSWORD", "shivani123")  # Use ENV var
-app.config['MYSQL_DB'] = 'dreamhome'  # Your database name
-app.config['MYSQL_CURSORCLASS'] = 'DictCursor'  # Makes result dictionary-based
 
-mysql = MySQL(app)
+# Register model in admin panel
+admin.site.register(CustomUser)
+
 
 # Home Route (Test)
-@app.route('/')
-def home():
-    return jsonify({"message": "Welcome to the 3D Model Generator"})
+def home(request):
+    return JsonResponse({"message": "Welcome to the 3D Model Generator"})
+
+
+# CSRF Token Endpoint (for frontend security)
+def csrf_token(request):
+    return JsonResponse({"csrfToken": get_token(request)})
+
 
 # Route for user registration
-@app.route('/register', methods=['POST'])
-def register():
-    try:
-        # Get JSON data from the request body
-        data = request.get_json()
-        name = data.get('name')
-        email = data.get('email')
-        password = data.get('password')
+@csrf_exempt
+def register(request):
+    if request.method == 'POST':
+        try:
+            data = json.loads(request.body)
+            name = data.get('name')
+            email = data.get('email')
+            password = data.get('password')
 
-        # Ensure all fields are provided
-        if not (name and email and password):
-            return jsonify({"message": "All fields are required"}), 400
+            if not (name and email and password):
+                return JsonResponse({"message": "All fields are required"}, status=400)
 
-        cursor = mysql.connection.cursor()
+            if CustomUser.objects.filter(email=email).exists():
+                return JsonResponse({"message": "User already registered"}, status=409)
 
-        # ✅ Check if the email already exists
-        cursor.execute("SELECT id FROM users WHERE email = %s", (email,))
-        if cursor.fetchone():
-            cursor.close()
-            return jsonify({"message": "User already registered"}), 409  # 409 = Conflict
+            user = CustomUser.objects.create_user(username=email, email=email, password=password, name=name)
+            user.save()
+            return JsonResponse({"message": "Registration successful"}, status=201)
 
-        # ✅ Hash password before storing
-        hashed_password = bcrypt.generate_password_hash(password).decode('utf-8')
+        except IntegrityError:
+            return JsonResponse({"message": "User already registered"}, status=409)
+        except Exception as e:
+            return JsonResponse({"message": f"An error occurred: {str(e)}"}, status=500)
+    return JsonResponse({"message": "Invalid request"}, status=400)
 
-        # ✅ Insert user into the database
-        cursor.execute("INSERT INTO users (name, email, password) VALUES (%s, %s, %s)",
-                       (name, email, hashed_password))
-        mysql.connection.commit()
-        cursor.close()
-
-        return jsonify({"message": "Registration successful"}), 201  # 201 = Created
-
-    except Exception as e:
-        return jsonify({"message": f"An error occurred: {str(e)}"}), 500
 
 # Route for user login
-@app.route('/login', methods=['POST'])
-def login():
-    data = request.get_json()
-    email = data.get('email')
-    password = data.get('password')
+@csrf_exempt
+def login(request):
+    if request.method == 'POST':
+        try:
+            data = json.loads(request.body)
+            email = data.get('email')
+            password = data.get('password')
 
-    cursor = mysql.connection.cursor()
-    cursor.execute("SELECT id, password FROM users WHERE email = %s", (email,))
-    user = cursor.fetchone()
+            user = authenticate(username=email, password=password)
+            if user is not None:
+                return JsonResponse({"message": "Login successful!"}, status=200)
+            else:
+                return JsonResponse({"message": "Invalid credentials!"}, status=401)
 
-    if user and bcrypt.check_password_hash(user['password'], password):
-        return jsonify({"message": "Login successful!"}), 200
-    else:
-        return jsonify({"message": "Invalid credentials!"}), 401
-
-# Run Flask app
-if __name__ == "__main__":
-    app.run(host="127.0.0.1", port=5000)
-
+        except Exception as e:
+            return JsonResponse({"message": f"An error occurred: {str(e)}"}, status=500)
+    return JsonResponse({"message": "Invalid request"}, status=400)

@@ -19,3 +19,15 @@ export * from './web/Canvas'
 export { createPointerEvents as events, createPointerEvents } from './web/events'
 export type { GlobalRenderCallback, GlobalEffectType } from './core/loop'
 export * from './core'
+
+// src/index.tsx
+import React from 'react'
+import ReactDOM from 'react-dom'
+import App from './App' // Import your App component
+
+ReactDOM.render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>,
+  document.getElementById('root'), // Ensure you have a div with id 'root' in your HTML
+)

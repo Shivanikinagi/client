@@ -5,34 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1cc386f2-00e3-42fd-9eee-0be7251c7cc5" name="Changes" comment="initial commit">
-      <change afterPath="$PROJECT_DIR$/backend/client/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/client/flask-threejs-testing" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/client/public/favicon.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/client/public/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/client/public/logo192.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/client/public/logo512.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/client/public/manifest.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/client/public/robots.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/client/rm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/client/src/App.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/client/src/App.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/client/src/App.test.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/client/src/components/BlueprintSelection.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/client/src/components/Home.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/client/src/components/Login.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/client/src/components/ModelViewer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/client/src/components/Register.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/client/src/index.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/client/src/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/client/src/logo.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/client/src/reportWebVitals.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/client/src/setupTests.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/client/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/backend/client/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/client/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/backend/client/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/client/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/backend/client/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/client/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/backend/client/readme.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flask-threejs-testing" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myproject/myapp/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/myproject/myapp/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myproject/myproject/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/myproject/myproject/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/fiber/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/packages/fiber/src/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/fiber/src/core/ThreeDScene.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/packages/fiber/src/core/ThreeDScene.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/fiber/src/core/events.ts" beforeDir="false" afterPath="$PROJECT_DIR$/packages/fiber/src/core/events.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/fiber/src/core/store.ts" beforeDir="false" afterPath="$PROJECT_DIR$/packages/fiber/src/core/store.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/fiber/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/packages/fiber/src/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,7 +32,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/backend/client" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="ROOT_SYNC" value="DONT_SYNC" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
@@ -58,7 +43,7 @@
 }</component>
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/pmndrs/react-three-fiber.git&quot;,
+    &quot;url&quot;: &quot;https://github.com/Shivanikinagi/client&quot;,
     &quot;accountId&quot;: &quot;2764a472-59aa-49ee-9dd6-72e92ed999f3&quot;
   }
 }</component>
@@ -74,8 +59,8 @@
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;Rebasing master&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/s/pycharm projects/DreamHome&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;client&quot;,
+    &quot;last_opened_file_path&quot;: &quot;F:/shivani/ML/client&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;org.jetbrains.plugins.github.ui.GithubSettingsConfigurable&quot;
   }
 }</component>
