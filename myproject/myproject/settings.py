@@ -130,5 +130,10 @@ STATIC_URL = 'static/'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 AUTH_USER_MODEL = 'myapp.CustomUser'  # Replace 'myapp' with the actual name of your app
+CORS_ALLOWED_ORIGINS = [
+    "http://localhost:3000",  # React frontend
+    "http://127.0.0.1:3000",
+]
+
 CORS_ALLOW_ALL_ORIGINS = True
 ALLOWED_HOSTS = ['localhost', '127.0.0.1']

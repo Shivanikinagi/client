@@ -3,6 +3,7 @@ import logging
 from django.contrib.auth import authenticate
 from django.contrib.auth.models import User
 from django.http import JsonResponse
+from django.http import HttpResponse
 from django.middleware.csrf import get_token
 from django.shortcuts import redirect
 from django.views.decorators.csrf import csrf_exempt
@@ -16,7 +17,7 @@ logger = logging.getLogger(__name__)
 def home(request):
     print("Redirecting to register page...")
    # return redirect('http://localhost:3000/login')
-    return JsonResponse({"message": "hello"}),
+    return JsonResponse({"message": "hello"})
 
 # CSRF Token Endpoint (for frontend security)
 def csrf_token(request):
