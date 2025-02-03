@@ -171,16 +171,14 @@ const Home = () => {
 
 export default Home;
 */
-import React from "react";
-import ModelViewer from "./ModelViewer"; // Ensure this file exists in src/components/
-
-function Home() {
+import React from 'react'
+//import ModelViewer from "./ModelViewer"; // Ensure this file exists in src/components/
+const HomePage = () => {
   return (
     <div>
-      <h1>Welcome to Home</h1>
-      <ModelViewer /> {/* Ensure ModelViewer is correctly defined */}
+      <h1>Welcome to the Home Page!</h1>
     </div>
-  );
+  )
 }
 
-export default Home;
+export default HomePage

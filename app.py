@@ -201,7 +201,7 @@ if __name__ == "__main__":
 if __name__ == '__main__':
     app.run(debug=True)'''
 from django.contrib.auth.models import AbstractUser
-from django.contrib.auth import authenticate
+from django.contrib.auth import authenticate, login as auth_login, logout as auth_logout
 from django.http import JsonResponse
 from django.views.decorators.csrf import csrf_exempt
 from django.db import models, IntegrityError
@@ -215,6 +215,7 @@ import json
 class CustomUser(AbstractUser):
     email = models.EmailField(unique=True)
     name = models.CharField(max_length=255)
+
     USERNAME_FIELD = 'email'
     REQUIRED_FIELDS = ['username']
 
@@ -228,7 +229,7 @@ def home(request):
     return JsonResponse({"message": "Welcome to the 3D Model Generator"})
 
 
-# CSRF Token Endpoint (for frontend security)
+# CSRF Token Endpoint (Frontend Security)
 def csrf_token(request):
     return JsonResponse({"csrfToken": get_token(request)})
 
@@ -257,6 +258,7 @@ def register(request):
             return JsonResponse({"message": "User already registered"}, status=409)
         except Exception as e:
             return JsonResponse({"message": f"An error occurred: {str(e)}"}, status=500)
+
     return JsonResponse({"message": "Invalid request"}, status=400)
 
 
@@ -270,11 +272,25 @@ def login(request):
             password = data.get('password')
 
             user = authenticate(username=email, password=password)
-            if user is not None:
-                return JsonResponse({"message": "Login successful!"}, status=200)
+            if user:
+                auth_login(request, user)  # Django session login
+                return JsonResponse({"message": "Login successful!", "user": {"name": user.name, "email": user.email}},
+                                    status=200)
             else:
                 return JsonResponse({"message": "Invalid credentials!"}, status=401)
 
         except Exception as e:
             return JsonResponse({"message": f"An error occurred: {str(e)}"}, status=500)
+
     return JsonResponse({"message": "Invalid request"}, status=400)
+
+
+# Route for user logout
+@csrf_exempt
+def logout(request):
+    if request.method == 'POST':
+        auth_logout(request)
+        return JsonResponse({"message": "Logout successful"}, status=200)
+    return JsonResponse({"message": "Invalid request"}, status=400)
+
+

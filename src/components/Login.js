@@ -1,56 +1,71 @@
-import React, { useState } from "react";
+import React, { useState } from 'react'
+import { useNavigate } from 'react-router-dom'
 
 const LoginForm = () => {
-  const [isLogin, setIsLogin] = useState(true); // Toggle between Login and Register
+  const [isLogin, setIsLogin] = useState(true)
   const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    password: "",
-  });
+    name: '',
+    email: '',
+    password: '',
+  })
+
+  const navigate = useNavigate()
 
   const handleChange = (e) => {
-    setFormData({ ...formData, [e.target.name]: e.target.value });
-  };
+    setFormData({ ...formData, [e.target.name]: e.target.value })
+  }
 
   const handleSubmit = async (e) => {
-    e.preventDefault();
-    const url = isLogin ? "http://127.0.0.1:5000/login" : "http://127.0.0.1:5000/register"; // Dynamic endpoint
+    e.preventDefault()
+    const url = isLogin ? 'http://127.0.0.1:8000/api/login/' : 'http://127.0.0.1:8000/api/register/'
 
     try {
+      console.log('Submitting form data:', formData) // Debug log
+
       const response = await fetch(url, {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(formData),
-      });
+      })
 
-      if (!response.ok) {
-        throw new Error("Failed to fetch");
-      }
+      // Handle non-JSON responses (e.g., 500 errors)
+      const contentType = response.headers.get('content-type')
+      const data = contentType?.includes('application/json')
+        ? await response.json()
+        : { message: 'Unexpected response from server' }
 
-      const data = await response.json(); // Parse the response as JSON
-      if (data.message === "Registration successful" || data.message === "Login successful") {
-        alert(isLogin ? "Login Successful!" : "Registration Successful!");
+      console.log('Response Data:', data)
+
+      if (response.ok) {
         if (isLogin) {
-          window.location.href = "/user-home"; // Redirect after successful login
+          alert('Login Successful!')
+          navigate('/home')
+        } else {
+          alert('Registration Successful!')
+          setIsLogin(true)
         }
       } else {
-        alert(data.message); // Show failure message from backend (e.g., "User already registered")
+        alert(data.message || 'Something went wrong! Please try again.')
       }
     } catch (error) {
-      console.error('Error:', error);
-      alert('An error occurred. Please try again.');
+      console.error('Error:', error)
+      alert('An error occurred. Please check the console for details.')
     }
-  };
+  }
 
   return (
-    <div className="d-flex justify-content-center align-items-center vh-100" style={{ background: "linear-gradient(to bottom right, #7f7fff, #bb7fff)" }}>
-      <div className="card p-4 shadow-lg" style={{ width: "24rem", borderRadius: "1.5rem" }}>
+    <div
+      className="d-flex justify-content-center align-items-center vh-100"
+      style={{
+        background: 'linear-gradient(to bottom right, #7f7fff, #bb7fff)',
+      }}>
+      <div className="card p-4 shadow-lg" style={{ width: '24rem', borderRadius: '1.5rem' }}>
         <h1 className="text-center mb-4 text-dark">3D Model Generator</h1>
         <div className="d-flex justify-content-around mb-4">
-          <button onClick={() => setIsLogin(true)} className={`btn ${isLogin ? "btn-primary" : "btn-light"} w-50`}>
+          <button onClick={() => setIsLogin(true)} className={`btn ${isLogin ? 'btn-primary' : 'btn-light'} w-50`}>
             Login
           </button>
-          <button onClick={() => setIsLogin(false)} className={`btn ${!isLogin ? "btn-primary" : "btn-light"} w-50`}>
+          <button onClick={() => setIsLogin(false)} className={`btn ${!isLogin ? 'btn-primary' : 'btn-light'} w-50`}>
             Register
           </button>
         </div>
@@ -64,6 +79,7 @@ const LoginForm = () => {
                 className="form-control"
                 placeholder="Enter your name"
                 onChange={handleChange}
+                required
               />
             </div>
           )}
@@ -75,6 +91,7 @@ const LoginForm = () => {
               className="form-control"
               placeholder="Enter your email"
               onChange={handleChange}
+              required
             />
           </div>
           <div className="mb-3">
@@ -85,15 +102,16 @@ const LoginForm = () => {
               className="form-control"
               placeholder="Enter your password"
               onChange={handleChange}
+              required
             />
           </div>
           <button type="submit" className="btn btn-dark w-100">
-            {isLogin ? "Login" : "Register"}
+            {isLogin ? 'Login' : 'Register'}
           </button>
         </form>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default LoginForm;
+export default LoginForm
