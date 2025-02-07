@@ -6,61 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="1cc386f2-00e3-42fd-9eee-0be7251c7cc5" name="Changes" comment="initial commit">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myproject/myapp/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/myproject/myapp/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myproject/myapp/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/myproject/myapp/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myproject/myproject/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/myproject/myproject/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myproject/myproject/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/myproject/myproject/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/fiber/src/App.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/fiber/src/core/ThreeDScene.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/fiber/src/core/events.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/fiber/src/core/hooks.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/fiber/src/core/index.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/fiber/src/core/loop.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/fiber/src/core/renderer.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/fiber/src/core/store.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/fiber/src/core/utils.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/fiber/src/index.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/fiber/src/native.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/fiber/src/native/Canvas.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/fiber/src/native/events.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/fiber/src/native/polyfills.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/fiber/src/three-types.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/fiber/src/web/Canvas.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/fiber/src/web/events.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/fiber/src/web/use-measure.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/test-renderer/.npmignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/test-renderer/CHANGELOG.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/test-renderer/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/test-renderer/markdown/rttr-instance.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/test-renderer/markdown/rttr.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/test-renderer/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/test-renderer/src/WebGL2RenderingContext.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/test-renderer/src/__tests__/RTTR.core.test.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/test-renderer/src/__tests__/RTTR.events.test.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/test-renderer/src/__tests__/RTTR.hooks.test.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/test-renderer/src/__tests__/RTTR.methods.test.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/test-renderer/src/__tests__/__snapshots__/RTTR.core.test.tsx.snap" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/test-renderer/src/__tests__/is.test.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/test-renderer/src/createTestCanvas.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/test-renderer/src/createTestInstance.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/test-renderer/src/fireEvent.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/test-renderer/src/helpers/events.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/test-renderer/src/helpers/graph.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/test-renderer/src/helpers/is.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/test-renderer/src/helpers/strings.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/test-renderer/src/helpers/testInstance.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/test-renderer/src/helpers/tree.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/test-renderer/src/helpers/waitFor.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/test-renderer/src/index.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/test-renderer/src/types/index.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/test-renderer/src/types/internal.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/test-renderer/src/types/public.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/test-renderer/yarn.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Home.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Home.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Login.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Login.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

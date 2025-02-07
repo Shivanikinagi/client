@@ -53,12 +53,12 @@ function App() {
 
 export default App;
 */
-import React from "react";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import LoginForm from "./components/Login";  // Ensure this file exists and is exported correctly
-import Home from "./components/Home";  // Ensure this file exists and is exported correctly
-import ArchitectHome from "./components/ArchitectHome";  // Ensure this file exists and is exported correctly
-import Register from "./components/Register";  // Ensure this file exists and is exported correctly
+import React from 'react'
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
+import LoginForm from './components/Login' // Ensure this file exists and is exported correctly
+import Home from './components/Home' // Ensure this file exists and is exported correctly
+import ArchitectHome from './components/ArchitectHome' // Ensure this file exists and is exported correctly
+import Register from './components/Register' // Ensure this file exists and is exported correctly
 
 function App() {
   return (
@@ -70,7 +70,7 @@ function App() {
         <Route path="/register" element={<Register />} />
       </Routes>
     </Router>
-  );
+  )
 }
 
-export default App;
+export default App
