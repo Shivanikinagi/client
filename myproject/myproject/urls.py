@@ -25,6 +25,6 @@ urlpatterns = [
     path('', home, name='home'),
     path('csrf_token/', csrf_token, name='csrf_token'),
     path('api/register/', register, name='register'),
-    path('login/', login, name='login'),
+    path('api/login/', login, name='login'),
     path('logout/', logout_view, name='logout'),
 ]
