@@ -3,6 +3,7 @@
 import { useState } from 'react'
 import { Canvas } from '@react-three/fiber'
 import { OrbitControls, useGLTF } from '@react-three/drei'
+import axios from 'axios'
 
 function Model({ modelUrl }) {
   const { scene } = useGLTF(modelUrl)
@@ -12,36 +13,31 @@ function Model({ modelUrl }) {
 const UserFlow = () => {
   const [step, setStep] = useState(1)
   const [parameters, setParameters] = useState({ size: '', material: '', layout: '' })
-  const [blueprints, setBlueprints] = useState([])
-  const [selectedBlueprint, setSelectedBlueprint] = useState(null)
+  const [generatedImage, setGeneratedImage] = useState(null)
   const [model3D, setModel3D] = useState(null)
 
   const handleParameterChange = (key, value) => {
     setParameters((prev) => ({ ...prev, [key]: value }))
   }
 
-  const generateBlueprints = async () => {
+  const generateImage = async () => {
     if (!parameters.size || !parameters.material || !parameters.layout) return
 
-    // Mock blueprint data (Replace with API call)
-    const mockBlueprints = [
-      { id: 1, image: '/blueprint1.png', name: 'Blueprint 1' },
-      { id: 2, image: '/blueprint2.png', name: 'Blueprint 2' },
-      { id: 3, image: '/blueprint3.png', name: 'Blueprint 3' },
-    ]
-    setBlueprints(mockBlueprints)
-    setStep(2)
-  }
-
-  const selectBlueprint = (blueprint) => {
-    setSelectedBlueprint(blueprint)
-    setStep(3)
+    try {
+      const response = await axios.post('/api/generate-image', {
+        prompt: `A ${parameters.layout} house made of ${parameters.material}, covering ${parameters.size} sq ft.`,
+      })
+      setGeneratedImage(response.data.image_url)
+      setStep(2)
+    } catch (error) {
+      console.error('Error generating image:', error)
+    }
   }
 
   const generate3DModel = async () => {
-    if (!selectedBlueprint) return
+    if (!generatedImage) return
     setModel3D('/assets/3d/sample_model.glb')
-    setStep(4)
+    setStep(3)
   }
 
   return (
@@ -77,39 +73,21 @@ const UserFlow = () => {
                 <option value="minimalist">Minimalist</option>
               </select>
               <button
-                onClick={generateBlueprints}
+                onClick={generateImage}
                 disabled={!parameters.size || !parameters.material || !parameters.layout}
                 className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 transition disabled:bg-gray-300">
-                Generate Blueprints
+                Generate Image
               </button>
             </div>
           )}
 
-          {/* Step 2: Choose a Blueprint */}
-          {step === 2 && (
+          {/* Step 2: Display Generated Image */}
+          {step === 2 && generatedImage && (
             <div className="space-y-4">
-              <h3 className="text-xl font-semibold">Step 2: Choose a Blueprint</h3>
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-                {blueprints.map((blueprint) => (
-                  <div
-                    key={blueprint.id}
-                    className="cursor-pointer border p-2 rounded-lg hover:shadow-lg transition"
-                    onClick={() => selectBlueprint(blueprint)}>
-                    <img src={blueprint.image} alt={blueprint.name} className="w-full h-auto" />
-                    <p className="text-center mt-2 font-medium">{blueprint.name}</p>
-                  </div>
-                ))}
-              </div>
-            </div>
-          )}
-
-          {/* Step 3: Generate 3D Model */}
-          {step === 3 && (
-            <div className="space-y-4">
-              <h3 className="text-xl font-semibold">Step 3: Generate 3D Model</h3>
+              <h3 className="text-xl font-semibold">Step 2: Generated Image</h3>
               <img
-                src={selectedBlueprint.image}
-                alt={selectedBlueprint.name}
+                src={generatedImage}
+                alt="Generated Visualization"
                 className="w-full max-w-md mx-auto rounded-lg shadow-md"
               />
               <button
@@ -120,10 +98,10 @@ const UserFlow = () => {
             </div>
           )}
 
-          {/* Step 4: View 3D Model */}
-          {step === 4 && (
+          {/* Step 3: View 3D Model */}
+          {step === 3 && (
             <div className="space-y-4">
-              <h3 className="text-xl font-semibold">Step 4: View 3D Model</h3>
+              <h3 className="text-xl font-semibold">Step 3: View 3D Model</h3>
               <div className="w-full h-[400px] bg-white rounded-lg shadow-md overflow-hidden">
                 <Canvas camera={{ position: [3, 3, 3], fov: 50 }}>
                   <ambientLight intensity={0.6} />
