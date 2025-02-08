@@ -172,59 +172,20 @@ const Home = () => {
 export default Home;
 */
 import React from 'react'
+import Hero from '../components/Hero'
+import HowItWorks from '../components/HowItWorks'
+import KeyFeatures from '../components/KeyFeatures'
+import Footer from '../components/Footer'
 
 const Home = () => {
   return (
-    <div style={styles.container}>
-      <h1 style={styles.title}>From 2D to 3D – AI-Driven Home Design at Your Fingertips</h1>
-      <div style={styles.buttonContainer}>
-        <button style={{ ...styles.button, ...styles.primaryButton }}>Generate 3D Model from 2D Plan</button>
-        <button style={{ ...styles.button, ...styles.secondaryButton }}>Upload Custom 2D Plan</button>
-      </div>
+    <div>
+      <Hero />
+      <HowItWorks />
+      <KeyFeatures />
+      <Footer />
     </div>
   )
-}
-
-const styles = {
-  container: {
-    display: 'flex',
-    flexDirection: 'column',
-    alignItems: 'center',
-    justifyContent: 'center',
-    textAlign: 'center',
-    height: '100vh',
-    background: 'linear-gradient(to bottom, #f8f9fa, #2c3e50)',
-    padding: '20px',
-  },
-  title: {
-    fontSize: '2.5rem',
-    fontWeight: 'bold',
-    color: '#2c3e50',
-    maxWidth: '700px',
-    marginBottom: '20px',
-  },
-  buttonContainer: {
-    display: 'flex',
-    gap: '15px',
-    marginTop: '20px',
-  },
-  button: {
-    padding: '12px 24px',
-    fontSize: '1rem',
-    border: 'none',
-    borderRadius: '5px',
-    cursor: 'pointer',
-    transition: '0.3s ease-in-out',
-  },
-  primaryButton: {
-    backgroundColor: 'black',
-    color: 'white',
-  },
-  secondaryButton: {
-    backgroundColor: 'white',
-    color: 'black',
-    border: '2px solid black',
-  },
 }
 
 export default Home

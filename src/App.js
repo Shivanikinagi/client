@@ -55,10 +55,10 @@ export default App;
 */
 import React from 'react'
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
-import LoginForm from './components/Login' // Ensure this file exists and is exported correctly
-import Home from './components/Home' // Ensure this file exists and is exported correctly
-import ArchitectHome from './components/ArchitectHome' // Ensure this file exists and is exported correctly
-import Register from './components/Register' // Ensure this file exists and is exported correctly
+import LoginForm from './pages/Login' // Ensure this file exists and is exported correctly
+import Home from './pages/Home' // Ensure this file exists and is exported correctly
+import ArchitectHome from './pages/ArchitectHome' // Ensure this file exists and is exported correctly
+import UserFlow from './components/UserFlow' // Adjust the path if needed
 
 function App() {
   return (
@@ -67,7 +67,7 @@ function App() {
         <Route path="/" element={<LoginForm />} />
         <Route path="/home" element={<Home />} />
         <Route path="/architect-home" element={<ArchitectHome />} />
-        <Route path="/register" element={<Register />} />
+        <Route path="/user-flow" element={<UserFlow />} />
       </Routes>
     </Router>
   )
