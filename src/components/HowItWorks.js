@@ -8,18 +8,18 @@ const steps = [
   },
   {
     icon: Palette,
-    title: 'Generate Blueprints',
-    description: 'AI generates multiple blueprint options based on user input.',
+    title: 'Generate Images',
+    description: 'AI generates multiple design images based on user input.',
   },
   {
     icon: FileImage,
     title: 'Choose or Upload',
-    description: 'Users select a generated blueprint, or architects upload their own.',
+    description: 'Users select a generated image, or architects upload their own.',
   },
   {
     icon: Cube,
     title: '3D Model Generation',
-    description: 'AI transforms the blueprint into an interactive 3D model.',
+    description: 'AI transforms the selected image into an interactive 3D model.',
   },
 ]
 

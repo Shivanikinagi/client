@@ -174,16 +174,11 @@ export default Home;
 import React from 'react'
 import Hero from '../components/Hero'
 import HowItWorks from '../components/HowItWorks'
-import KeyFeatures from '../components/KeyFeatures'
-import Footer from '../components/Footer'
-
 const Home = () => {
   return (
     <div>
       <Hero />
       <HowItWorks />
-      <KeyFeatures />
-      <Footer />
     </div>
   )
 }
